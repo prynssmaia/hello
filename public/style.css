@@ -6,9 +6,17 @@
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     width: 100%;
     background-color: var(--black10);
+}
+
+.bg-image {
+  background: url("/public/background.svg") no-repeat center fixed;
 }
 
 a {
@@ -83,6 +91,21 @@ h6 {
   line-height: 150%;
 }
 
+#site-header {
+  display: flex;
+
+	position: fixed;
+	height: 78px;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+	transition: all .2s ease;
+	box-shadow: 0 1px 25px rgba(0,0,0, .1);
+}
+#site-header.hide {
+	top: -70px;
+}
+
 
 /* MENU STYLES =============== */
 .menu {
@@ -90,6 +113,10 @@ h6 {
     display: flex;
     justify-content: center;
     padding: 24px 16px;
+}
+
+main {
+  margin-top: calc(78px + 2rem);
 }
 
 .left-menu, .right-menu {

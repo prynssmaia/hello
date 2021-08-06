@@ -10,34 +10,58 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Saira+Condensed:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header class="menu">
-        <div class="left-menu">
-            <a href="#" class="link">Work</a>
+<body class="">
+    <header class="menu" id="site-header">
+        <div class="left-menu show">
+            <a href="#about" class="link">About</a>
         </div>
         <div class="logo">
             <h3>313</h3>
         </div>
-        <div class="right-menu">
-            <a href="#" class="link">About</a>
+        <div class="right-menu show">
+            <a href="#projects" class="link">Projects</a>
         </div>
     </header>
 
-    <section class="container hero">
-        <div class="container-item">
-            <h1 class="text-right">Prynss Maia</h1>
-            <h3 class="mask text-right">Currently learning</h3>
-            <h3 class="mask text-right">and uploading some projects</h3>
-            
+    <main>
+        <section class="container hero">
+            <div class="container-item">
+                <h1 class="">Prynss Maia</h1>
+                <h3 class="mask text-right">Currently learning</h3>
+                <h3 class="mask text-right">and uploading some projects</h3>
+
+            </div>
+            <div class="container-item">
+                <img src="/public/red-sun.svg" alt="Synthwave sun">
+            </div>        
+        </section>
+        <div class="button">
+            <button class="btn-square">
+                <a href="#contact" class="square">Get in touch</a>
+            </button>
         </div>
-        <div class="container-item">
-            <img src="/public/red-sun.svg" alt="Synthwave sun">
-        </div>        
-    </section>
-    <div class="button">
-        <button class="btn-square">
-            <a href="" class="square">Get in touch</a>
-        </button>
-    </div>
+
+        <section class="container" id="about">
+            <div class="container-item">
+                <h1>About</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, sunt! Consequuntur nihil veritatis nulla numquam officiis dolores illo. Praesentium sit assumenda vitae saepe officiis dolorem dignissimos ipsum incidunt qui temporibus.</p>
+            </div>
+        </section>
+
+        <section class="container" id="projects">
+            <div class="container-item">
+                <h1>Projects</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem fugit hic rerum in et quasi dignissimos ab, facilis maiores quidem sed repellat eveniet perspiciatis corrupti sequi ipsa reiciendis provident asperiores.</p>
+            </div>
+        </section>
+
+        <section class="container" id="contact">
+            <div class="container-item">
+                <h1>Contact</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, facilis?</p>
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
 </body>
 </html>
