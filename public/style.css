@@ -14,8 +14,8 @@ body {
     width: 100%;
     min-height: 100vh;
     /* FIXME - Ativar bg color*/
-    /* background-color: var(--black10); */
-    background: linear-gradient(180deg, #050607 5%, #350207 20%, #E10234 107.74%);
+    background-color: var(--black10);
+    /* background: linear-gradient(180deg, #050607 5%, #350207 20%, #E10234 107.74%); */
 }
 
 .bg-image {
@@ -252,8 +252,10 @@ main {
 }
 
 .square {
-  font-size: 24px;
-  padding: 16px 24px;
+  font-size: 18px;
+  padding: 12px 18px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .text-right {
@@ -281,7 +283,25 @@ main {
   border-color: #fff;
 }
 
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .button {
   display: flex;
   justify-content: center;
+}
+
+.btn-square a i {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+/* BUTTON STYLES =============== */
+.icon-github,
+.icon-linkedin,
+.icon-outlook {
+  color: var(--white20);
 }
