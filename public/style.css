@@ -253,3 +253,9 @@ main {
 .icon-outlook {
   color: var(--white20);
 }
+
+/* PAGE-ELEMENTS STYLES =============== */
+.page-elements {
+  position: absolute;
+  z-index: -1;
+}
