@@ -64,7 +64,7 @@ span {
 
 /* GENERAL STYLES =============== */
 .container {
-  width: 100%;
+  /* width: 100%; */
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
@@ -119,12 +119,11 @@ img {
 
 #home .text p {
   margin-bottom: 2rem;
-}
+}wi
 
 #home .image img {
   position: relative;
   height: 80vh;
-  left: 10px;
 }
 
 /* FONTS STYLES =============== */
