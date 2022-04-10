@@ -29,13 +29,15 @@ a {
   --black30: #110b0b;
   
   --gradient-red: linear-gradient(180deg, #050607 5%, #350207 20%, #E10234 107.74%);
+
+  --header-height: 4.5rem;
 }
 
 body {
-    /* width: 100%;
-    min-height: 100vh; */
-    background-color: var(--black10);
-    background: var(--gradient-red);
+    width: 100%;
+    min-height: 100vh; 
+    /* background-color: var(--black10);
+    background: var(--gradient-red);*/
     -webkit-font-smoothing: antialiased;
 }
 
@@ -44,8 +46,19 @@ body {
 }
 
 /* HEADER STYLES =============== */
+#header {
+  margin-bottom: 2rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 1px 25px rgba(0,0,0, .1);
+  background-color: var(--gradient-red);
+}
+
 nav {
-  height: 4.5rem;
+  height: var(--header-height);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -60,27 +73,38 @@ span {
   color: var(--red10);
 }
 
+main {
+  margin-top: var(--header-height);
+}
+
 /* HEADER STYLES =============== */
 
 /* GENERAL STYLES =============== */
 .container {
-  /* width: 100%; */
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
 
-img {
+/* img {
   width: 100%;
   height: auto;
-}
+} */
 
 .section {
   padding: 5rem 0;
+  height: 100vh;
 }
 
 .grid {
   display: grid;
   gap: 2rem;
+}
+
+.mask {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(225, 2, 52, 0.4)), to(rgba(225, 2, 52, 0.4))), #5D0211;
+  background: linear-gradient(0deg, rgba(225, 2, 52, 0.4), rgba(225, 2, 52, 0.4)), #5D0211;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .button {
@@ -92,13 +116,21 @@ img {
   align-items: center;
   padding: 0 2rem;
   border-radius: 0.25rem;
-  font: 500 1.2rem 'Saira Condensed', sans-serif;
+  font: 500 1.3rem 'Saira Condensed', sans-serif;
   transition: background 0.3s;
 }
 
 .button:hover {
   background-color: var(--red20);
 }
+
+#home .socials i {
+  margin: 0 50px;
+  font-size: 1.5rem;
+  color: var(--white10);
+  height: 500px;
+}
+
 
 /* GENERAL STYLES =============== */
 
@@ -111,20 +143,32 @@ img {
   position: absolute;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+  text-align: center;
 }
 
 #home .text h1 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.6rem;
+}
+
+#home .text h3 {
+  font: 400 1.5rem 'Saira Condensed', sans-serif;
+  color: var(--red10);
+  margin-bottom: 2rem;
 }
 
 #home .text p {
   margin-bottom: 2rem;
-}wi
+  max-width: 100%;
+}
 
 #home .image img {
   position: relative;
-  height: 80vh;
+  height: 50vh;
+  top: -88px;
+  left: 30%;
 }
+
+
 
 /* FONTS STYLES =============== */
 body {
@@ -132,7 +176,8 @@ body {
 }
 
 h1 {
-  font: 700 3rem 'Orbitron', sans-serif; 
+  font: 700 4rem 'Orbitron', sans-serif;
+  line-height: 76px;
   color: var(--white10);
   letter-spacing: .2rem;
 }
