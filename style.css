@@ -202,6 +202,11 @@ nav ul li a:hover::after {
 nav .menu {
   opacity: 0;
   visibility: hidden;
+  transition: 0.2s ease;
+}
+
+nav .menu ul {
+  display: none;
 }
 
 nav.show .menu {
@@ -216,11 +221,13 @@ nav.show .menu {
   position: fixed;
   top: 0;
   left: 0;
-}
 
-nav.show .menu {
   display: grid;
   place-content: center;
+}
+
+nav.show .menu ul {
+  display: grid;
 }
 
 nav.show ul.grid {
@@ -231,6 +238,7 @@ nav.show ul.grid {
   color: var(--white10);
   font-size: 1.5rem;
   cursor: pointer;
+  transition: 0.2s ease;
 }
 
 nav .close {
@@ -239,6 +247,7 @@ nav .close {
 
   position: absolute;
   right: 1.5rem;
+  
 }
 
 nav.show .close {
