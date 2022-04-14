@@ -67,3 +67,18 @@ for (const link of links) {
     window.addEventListener('scroll', checkScroll);
   
   })();
+
+
+// ScrollReval 
+const scrollReveal = ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 500,
+  reset: true
+})
+
+scrollReveal.reveal(`
+  #home .image, #home .text,
+  #projects .title, #projects .card,
+  #about .title, #about p
+`, {interval: 100})
