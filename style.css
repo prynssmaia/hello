@@ -338,3 +338,31 @@ h2, h3, h4, h5, h6, p, a {
   font-size: 1.5rem;
   color: var(--white10);
 }
+
+/* CARDS STYLES =============== */
+
+/* BACK TO TOP STYLES =============== */
+.back-to-top {
+  background-color: var(--red10);
+
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+
+  padding: 1rem;
+  clip-path: circle();
+
+  font-size: 1.5rem;
+  line-height: 0;
+
+  visibility: hidden;
+  opacity: 0;
+  transition:  0.3s;
+  transform: translateY(100%);
+}
+
+.back-to-top.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}

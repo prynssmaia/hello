@@ -82,3 +82,13 @@ scrollReveal.reveal(`
   #projects .title, #projects .card,
   #about .title, #about p
 `, {interval: 100})
+
+// Back to top button
+const backToTopButton = document.querySelector('.back-to-top')
+window.addEventListener('scroll', function() {
+  if(window.scrollY >= 560) {
+    backToTopButton.classList.add('show')
+  } else {
+    backToTopButton.classList.remove('show')
+  }
+})
