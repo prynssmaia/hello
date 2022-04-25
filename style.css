@@ -18,7 +18,8 @@ a {
   text-decoration: none;
 }
 
-:root { 
+:root {
+  /* Colors ===========  */
   --red10: #E10234;
   --red20: #87021B;
   --red30: #350207;
@@ -34,8 +35,12 @@ a {
   
   --gradient-red: linear-gradient(180deg, #050607 5%, #350207 20%, #E10234 107.74%);
   --gradoemt-red10: linear-gradient(to right, #050607,#350207, #e10234);
-
+  
   --header-height: 4.5rem;
+
+  /* Fonts ===========  */
+  --title-font-size: 3rem;
+  --title-hero-font-size: 4rem;
 }
 
 body {
@@ -272,7 +277,14 @@ body {
 }
 
 .title {
-  font: 700 4rem 'Orbitron', sans-serif;
+  font: 700 var(--title-font-size) 'Orbitron', sans-serif;
+  line-height: 76px;
+  color: var(--white10);
+  letter-spacing: .2rem;
+}
+
+.title-hero {
+  font: 700 var(--title-hero-font-size) 'Orbitron', sans-serif;
   line-height: 76px;
   color: var(--white10);
   letter-spacing: .2rem;
@@ -365,4 +377,19 @@ h2, h3, h4, h5, h6, p, a {
   visibility: visible;
   opacity: 1;
   transform: translateY(0);
+}
+
+/* BACK TO TOP STYLES =============== */
+
+
+/* MEDIA QUERIES =============== */
+/* Extra large devices: 1200 > */
+/* Large devices: 1023 > */
+
+/* Large devices: 992 ou mais */
+@media (min-width: 992px) {
+  :root {
+    --title-font-size: 4rem;
+    --title-hero-font-size: 6rem;
+  }
 }
