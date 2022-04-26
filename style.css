@@ -35,6 +35,7 @@ a {
   
   --gradient-red: linear-gradient(180deg, #050607 5%, #350207 20%, #E10234 107.74%);
   --gradient-red10: linear-gradient(to right, #050607,#350207, #e10234);
+  --gradient-bg: linear-gradient(to bottom, #000000, #020101, #070505, #150505, #1e0505, #250606, #2c0506, #3b060e, #4b0514, #5c0218, #7c0120, #9c0028, #be002e, #e10234);
   
   --header-height: 4.5rem;
 
@@ -47,7 +48,7 @@ body {
     width: 100%;
     min-height: 100vh; 
     /* background-color: var(--black10);*/
-    background: var(--gradient-red);
+    /* background: var(--gradient-bg); */
     -webkit-font-smoothing: antialiased;
 }
 
@@ -70,8 +71,16 @@ body {
   height: auto;
 } */
 
+.section#projects {
+  background: var(--gradient-bg);
+}
+
+.section#about {
+  background-color: var(--red10);
+}
+
 .section {
-  padding: 5rem 0;
+  padding: 5rem 0;  
   /* height: 100vh; */
 }
 
