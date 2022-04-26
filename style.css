@@ -34,7 +34,7 @@ a {
   --black30: #110b0b;
   
   --gradient-red: linear-gradient(180deg, #050607 5%, #350207 20%, #E10234 107.74%);
-  --gradoemt-red10: linear-gradient(to right, #050607,#350207, #e10234);
+  --gradient-red10: linear-gradient(to right, #050607,#350207, #e10234);
   
   --header-height: 4.5rem;
 
@@ -46,8 +46,8 @@ a {
 body {
     width: 100%;
     min-height: 100vh; 
-    /* background-color: var(--black10);
-    background: var(--gradient-red);*/
+    /* background-color: var(--black10);*/
+    background: var(--gradient-red);
     -webkit-font-smoothing: antialiased;
 }
 
@@ -200,7 +200,7 @@ nav ul li a::after {
   content: "";
   width: 0;
   height: 2px;
-  background: var(--gradoemt-red10);
+  background: var(--gradient-red10);
 
   position: absolute;
   left: 0;
