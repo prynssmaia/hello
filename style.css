@@ -113,8 +113,14 @@ body {
   transition: background 0.3s;
 }
 
-.button:hover {
-  background-color: var(--red20);
+.neon-hover {
+  transition: box-shadow 0.2s ease-in;
+}  
+
+.neon-hover:hover {
+  background: var(--red10);
+  border: .5px solid #ff3460;
+  box-shadow: 0 0 20px var(--red10);
 }
 /* GENERAL STYLES =============== */
 
