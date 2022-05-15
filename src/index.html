@@ -6,11 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello • Portfolio Project</title>
     <link href="/src/tailwind.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Saira+Condensed:wght@300;400;500&display=swap"
+    rel="stylesheet" />
 </head>
-<body class="bg-theme text-gray-300">
-    <h1 class="text-white text-3xl font-bold">
-        Hello world!
-    </h1>
+<body class="bg-theme text-b">
+    <div class="px-6 h-screen bg-portait bg-no-repeat bg-cover md:px-14 lg:px-24 w-full">
+        <!-- Hero Section -->
+        <header class="py-6 bg-nav">
+            <nav class="text-white font-body">
+                <ul class="flex justify-center items-center gap-8 hidden md:flex space-x-12">
+                    <li><a class="transition linear delay-75 hover:text-theme"href="#projects">Projects</a></li>
+                    <li><a class="transition linear delay-75 hover:text-theme"href="#home" class="text-lg font-bold">313 Project</a></li>
+                    <li><a class="transition linear delay-75 hover:text-theme"href="#about">About</a></li>
+                </ul>
+                <div class="md:hidden flex justify-end">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.28625 12.7404H21.2863" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.28625 6.74039H21.2863" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.28625 18.7404H21.2863" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </nav>
+        </header>
+        <section class="flex flex-col items-center">
+                <h1 class="py-10 text-white text-3xl font-bold font-title">
+                    Hello world!
+                </h1>
+                <div class="h-96 w-96 bg-sun bg-cover">
+                </div>
+        </section>
+        
+        
+    </div>
     
 </body>
 </html>
