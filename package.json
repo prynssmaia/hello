@@ -1,0 +1,26 @@
+{
+  "name": "hello",
+  "version": "1.0.0",
+  "description": "Portfolio project",
+  "main": "tailwind.config.js",
+  "dependencies": {
+    "tailwindcss": "^3.0.24"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "npx tailwindcss-cli -i ./src/style.css -o ./src/tailwind.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prynssmaia/hello.git"
+  },
+  "keywords": [
+    "tailwindcss"
+  ],
+  "author": "Prynss Maia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prynssmaia/hello/issues"
+  },
+  "homepage": "https://github.com/prynssmaia/hello#readme"
+}
