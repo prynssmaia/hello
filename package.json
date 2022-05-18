@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Portfolio project",
   "main": "tailwind.config.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "tailwindcss": "^3.0.24"
   },
-  "devDependencies": {},
   "scripts": {
     "dev": "npx tailwindcss-cli -i ./src/style.css -o ./src/tailwind.css -w"
   },
