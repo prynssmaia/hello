@@ -16,8 +16,8 @@
     <div class="px-6 h-screen bg-portait bg-no-repeat bg-cover md:px-14 lg:px-24 w-full">
 
         <!-- Hero Section -->
-        <header class="py-6 bg-nav">
-            <nav class="text-white font-body flex justify-between items-center mx-auto text-xl tracking-wide w-full">
+        <header id="header" class="py-6 bg-nav">
+            <nav class="text-white font-body flex justify-between items-center mx-auto text-xl tracking-wide">
                 
                 <div class="font-title font-bold text-2xl tracking-wider">
                     <svg width="47" height="48" viewBox="0 0 523 540" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,12 +27,12 @@
                     </svg>                        
                 </div>
                 <div class="gap-8 hidden md:flex space-x-12 items-center">
-                    <a class="transition linear delay-75 hover:text-theme" href="#projects">Projects</a>
-                    <a class="transition linear delay-75 hover:text-theme" href="#about">About</a>
-                    <a class="transition linear delay-75 hover:text-theme" href="#contact">Contact</a>
+                    <a class="transition ease-linear delay-75 hover:text-theme" href="#projects">Projects</a>
+                    <a class="transition ease-linear delay-75 hover:text-theme" href="#about">About</a>
+                    <a class="transition ease-linear delay-75 hover:text-theme" href="#contact">Contact</a>
                 </div>
 
-                <div class="md:hidden flex justify-end">
+                <div id="toggle" class="md:hidden flex justify-end">
                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.28625 12.7404H21.2863" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M3.28625 6.74039H21.2863" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -51,6 +51,8 @@
         
         
     </div>
-    
+
+    <!-- main -->
+    <script src="main.js"></script>
 </body>
 </html>

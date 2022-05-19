@@ -18042,6 +18042,26 @@ video {
   content: none;
 }
 
+.show-menu {
+  visibility: visible;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  place-content: center;
+  --tw-bg-opacity: 1;
+  background-color: rgba(225, 2, 52, var(--tw-bg-opacity));
+  opacity: 1
+}
+
+#toggle {
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1.5rem
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
