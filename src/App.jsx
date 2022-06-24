@@ -1,10 +1,12 @@
 import React from 'react';
+import TitleGradient from './components/TitleGradient';
+import BodyText from './components/BodyText';
 
 function App() {
   return (
-    <div className="flex h-screen flex-col items-center justify-center bg-black font-text">
-      <h1 className="text-white">HELLO, PORTFOLIO PROJECT</h1>
-      <p className="text-white">- Prynss Maia</p>
+    <div className="flex h-screen flex-col items-center justify-center bg-portait font-text">
+      <TitleGradient text="Prynss Maia" />
+      <BodyText text="Losing myself to design and some web projects while listen to music." />
     </div>
   );
 }
