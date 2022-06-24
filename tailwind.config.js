@@ -9,8 +9,8 @@ module.exports = {
         text: ["'Libre Franklin'", 'sans-serif'],
       },
       backgroundImage: {
-        portait: "url('/assets/bg-hero.jpg')",
-        hero: 'linear-gradient(121.36deg, #D7057F 9%, #C8098A 14%, #1442DB 38%)',
+        portait: "url('./assets/bg-hero.png')",
+        hero: 'linear-gradient(121.36deg, #D7057F 23%, #C8098A 44%, #1442DB 92%)',
       },
       boxShadow: {
         pink: '0px 0px 32px #D7057F85',
