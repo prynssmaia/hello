@@ -10,28 +10,6 @@ function App() {
       <BackgroundVideo />
       {/* Header Section */}
       <Navbar />
-      <header className="sticky top-0 py-5 lg:py-7">
-        <div>
-          <svg
-            className="lg:h-11 lg:w-16"
-            width="56"
-            height="36"
-            viewBox="0 0 56 36"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M10.5996 6.40625L1.38867 32H20.8652L11.6367 6.40625H10.5996ZM2.68945 31.0508L10.7227 8.70898L11.1094 7.47852L11.4961 8.70898L19.5117 31.0508H2.68945Z"
-              fill="#fff"
-            />
-            <line x1="28.5" y1="6" x2="28.5" y2="32" stroke="#fff" />
-            <path
-              d="M44.5996 6.40625L35.3887 32H54.8652L45.6367 6.40625H44.5996ZM36.6895 31.0508L44.7227 8.70898L45.1094 7.47852L45.4961 8.70898L53.5117 31.0508H36.6895Z"
-              fill="#fff"
-            />
-          </svg>
-        </div>
-      </header>
       {/* Hello Section */}
       <div id="home" className="relative flex flex-col pt-32 lg:pt-52">
         <TitleGradient text="Prynss Maia" />
