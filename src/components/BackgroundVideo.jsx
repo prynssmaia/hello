@@ -10,7 +10,7 @@ function BackgroundVideo() {
         loop
         muted
         autoPlay
-        playsinline
+        playsInline
         className="h-full w-full object-cover"
         src={video}
       ></video>
