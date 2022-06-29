@@ -1,14 +1,16 @@
 import React from 'react';
+import Navbar from './components/Navbar';
 import TitleGradient from './components/TitleGradient';
 import BodyText from './components/BodyText';
 import BackgroundVideo from './components/BackgroundVideo';
 
 function App() {
   return (
-    <div className="min-h-screen w-full px-6 md:px-14 lg:px-28">
+    <div className="layout h-screen">
       <BackgroundVideo />
       {/* Header Section */}
-      <header className="sticky top-0 z-50 py-5 lg:py-7">
+      <Navbar />
+      <header className="sticky top-0 py-5 lg:py-7">
         <div>
           <svg
             className="lg:h-11 lg:w-16"
@@ -20,19 +22,18 @@ function App() {
           >
             <path
               d="M10.5996 6.40625L1.38867 32H20.8652L11.6367 6.40625H10.5996ZM2.68945 31.0508L10.7227 8.70898L11.1094 7.47852L11.4961 8.70898L19.5117 31.0508H2.68945Z"
-              fill="#350207"
+              fill="#fff"
             />
-            <line x1="28.5" y1="6" x2="28.5" y2="32" stroke="#350207" />
+            <line x1="28.5" y1="6" x2="28.5" y2="32" stroke="#fff" />
             <path
               d="M44.5996 6.40625L35.3887 32H54.8652L45.6367 6.40625H44.5996ZM36.6895 31.0508L44.7227 8.70898L45.1094 7.47852L45.4961 8.70898L53.5117 31.0508H36.6895Z"
-              fill="#350207"
+              fill="#fff"
             />
           </svg>
         </div>
       </header>
-
       {/* Hello Section */}
-      <div className="relative flex flex-col pt-32 lg:pt-52">
+      <div id="home" className="relative flex flex-col pt-32 lg:pt-52">
         <TitleGradient text="Prynss Maia" />
         <BodyText text="Losing myself to design and some web projects while listen to music." />
         {/* Socials Section */}
