@@ -13,8 +13,9 @@ function BackgroundVideo() {
         playsInline
         className="h-full w-full object-cover"        
       >
-        <source src={video} type="video/mp4"></source>
-        <source src={video} type="video/ogg"></source>        
+        <source src={video} type="video/mp4; codecs=hvc1" />
+        <source src={video} type="video/webm; codecs=vp9" />
+        <source src={video} type="video/ogg" />
       </video>
     </div>
   );
