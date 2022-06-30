@@ -11,9 +11,11 @@ function BackgroundVideo() {
         muted
         autoPlay
         playsInline
-        className="h-full w-full object-cover"
-        src={video}
-      ></video>
+        className="h-full w-full object-cover"        
+      >
+        <source src={video} type="video/mp4"></source>
+        <source src={video} type="video/ogg"></source>        
+      </video>
     </div>
   );
 }
