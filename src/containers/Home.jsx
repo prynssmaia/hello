@@ -6,7 +6,7 @@ import { CaretDown } from 'phosphor-react';
 
 function Home() {
   return (
-    <div className="flex h-screen flex-col" id="home">
+    <div className="container flex h-screen flex-col" id="home">
       <Navbar />
       <div className="flex flex-1 flex-col justify-center">
         <TitleGradient text="Prynss Maia" />

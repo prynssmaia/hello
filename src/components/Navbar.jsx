@@ -58,7 +58,7 @@ function Navbar() {
             </div>
           )}
           {toggleMenu && (
-            <div className="bg-ora fixed left-0 top-0 flex h-screen w-screen flex-col justify-center space-y-12 bg-orange-200 text-center text-primary">
+            <div className="bg-ora fixed left-0 top-0 flex h-screen w-screen flex-col justify-center space-y-12 bg-home text-center text-primary">
               <ul className="grid gap-16">
                 <li className="duration-600 font-text text-5xl font-semibold transition-all hover:text-white">
                   <a onClick={() => setToggleMenu(false)} href="#home">

@@ -3,7 +3,7 @@ import Home from './containers/Home';
 
 function App() {
   return (
-    <div className="container min-h-screen">
+    <div className="min-h-screen bg-home">
       <Home />
     </div>
   );
