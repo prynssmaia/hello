@@ -10,7 +10,7 @@ module.exports = {
       },
       backgroundImage: {
         portait: "url('/assets/bg-hero.png')",
-        home: 'linear-gradient(150deg, #FF765A 41.15%, #FF8870 100%)',
+        home: 'linear-gradient(104.4deg, #FFA28F 23.54%, #FF8870 92.45%)',
         hero: 'linear-gradient(121.36deg, #D7057F 23%, #C8098A 14%, #1442DB 48%)',
       },
       boxShadow: {
