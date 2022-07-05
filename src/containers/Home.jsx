@@ -50,12 +50,14 @@ function Home() {
       </div>
       {/* Arrow Down */}
       <div className="flex items-center justify-center pb-5 md:pb-10 lg:pb-12">
+        <a href="#projects">
         <CaretDown
           className="transform cursor-pointer transition-all duration-500 hover:scale-105 lg:h-14 lg:w-14"
           size={48}
           color="#350207"
           weight="thin"
         />
+        </a>
       </div>
     </div>
   );
