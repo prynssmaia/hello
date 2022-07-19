@@ -2,7 +2,7 @@ import React from 'react';
 
 function ProjectCard({ title, description }) {
   return (
-    <div className="group relative grid w-full cursor-pointer rounded">
+    <div className="group relative grid w-full cursor-point rounded">
       {/* background image */}
       <div className="rounded">
         <img

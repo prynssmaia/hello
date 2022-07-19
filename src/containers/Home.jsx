@@ -14,7 +14,11 @@ function Home() {
         {/* Socials Section */}
         <ul className="flex w-36 justify-between pt-10 md:w-44 md:pt-14 lg:w-48 lg:pt-20">
           <li className="flex h-7 w-7 transform items-center justify-center rounded-full transition-all duration-700 hover:scale-105 hover:shadow-pink">
-            <a href="https://www.instagram.com/prynssmaia/" target="_blank">
+            <a 
+              className="cursor-point"
+              href="https://www.instagram.com/prynssmaia/"
+              target="_blank"
+            >
               <InstagramLogo
                 className="lg:h-10 lg:w-10"
                 size={28}
@@ -24,7 +28,11 @@ function Home() {
             </a>
           </li>
           <li className="flex h-7 w-7 transform items-center justify-center rounded-full transition-all duration-700 hover:scale-105 hover:shadow-red">
-            <a href="https://github.com/prynssmaia" target="_blank">
+            <a
+              className="cursor-point" 
+              href="https://github.com/prynssmaia"
+              target="_blank"
+            >
               <GithubLogo
                 className="lg:h-10 lg:w-10"
                 size={28}
@@ -35,6 +43,7 @@ function Home() {
           </li>
           <li className="flex h-7 w-7 transform items-center justify-center rounded-full transition-all duration-700 hover:scale-105 hover:shadow-blue">
             <a
+              className="cursor-point"
               href="https://www.linkedin.com/in/prynss-maia-da-silva-689866241/"
               target="_blank"
             >
@@ -52,7 +61,7 @@ function Home() {
       <div className="flex items-center justify-center pb-5 md:pb-10 lg:pb-12">
         <a href="#projects">
         <CaretDown
-          className="transform cursor-pointer transition-all duration-500 hover:scale-105 lg:h-14 lg:w-14"
+          className="transform cursor-point transition-all duration-500 hover:scale-105 lg:h-14 lg:w-14"
           size={48}
           color="#350207"
           weight="thin"

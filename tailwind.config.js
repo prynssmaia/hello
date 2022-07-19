@@ -2,6 +2,10 @@ module.exports = {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      cursor: {
+        default: 'url(/public/assets/navigation.svg), default',
+        point: 'url(/public/assets/pointer.svg), pointer'
+      },
       colors: {
         primary: '#350207',
       },

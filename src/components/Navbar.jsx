@@ -31,29 +31,29 @@ function Navbar() {
         {/* menu-desktop */}
         <ul className="hidden space-x-12 text-primary md:flex">
           <li className="duration-600 font-text text-lg font-light transition-all hover:text-white">
-            <a href="#home">Home</a>
+            <a className="cursor-point" href="#home">Home</a>
           </li>
           <li className="duration-600 font-text text-lg font-light transition-all hover:text-white">
-            <a href="#projects">Projects</a>
+            <a className="cursor-point" href="#projects">Projects</a>
           </li>
           <li className="duration-600 font-text text-lg font-light transition-all hover:text-white">
-            <a href="#about">About</a>
+            <a className="cursor-point" href="#about">About</a>
           </li>
           <li className="duration-600 font-text text-lg font-light transition-all hover:text-white">
-            <a href="#contact">Contact</a>
+            <a className="cursor-point" href="#contact">Contact</a>
           </li>
         </ul>
         {/* menu-mobile */}
         <div className="md:hidden lg:hidden">
           {toggleMenu ? (
             <div
-              className="absolute right-[-1.2px] top-[20px] z-50 cursor-pointer"
+              className="absolute right-[-1.2px] top-[20px] z-50 cursor-point"
               onClick={() => setToggleMenu(false)}
             >
               <X size={24} color="#320207" weight="light" />
             </div>
           ) : (
-            <div className="cursor-pointer" onClick={() => setToggleMenu(true)}>
+            <div className="cursor-point" onClick={() => setToggleMenu(true)}>
               <List size={24} color="#320207" weight="light" />
             </div>
           )}
