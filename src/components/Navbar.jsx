@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import ReactTooltip from "react-tooltip";
 import { NavigationArrow, Layout, TextT, ChatCircle, List, X } from 'phosphor-react';
 
 function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [tooltip, showTooltip] = useState(true);
 
   return (
     <header className="sticky top-0 z-20 bg-black10 border-b border-[#444444]">
@@ -35,20 +37,31 @@ function Navbar() {
               <NavigationArrow size={32} color="#fafcfc" weight="thin" />
             </a>
           </li>
-          <li className="h-full p-2 duration-300 transition-all hover:bg-black20">
+          <li className="h-full p-2 duration-300 transition-all hover:bg-black20" data-tip data-for="projectsTip">
             <a className="cursor-point" href="#projects">
               <Layout size={32} color="#fafcfc" weight="thin" />
             </a>
+            {tooltip && <ReactTooltip effect="solid" place="bottom" />}
+            <p
+              data-tip="hello world"
+              onMouseEnter={() => showTooltip(true)}
+              onMouseLeave={() => {
+                showTooltip(false);
+                setTimeout(() => showTooltip(true), 50);
+              }}
+            />
           </li>
-          <li className="h-full p-2 duration-300 transition-all hover:bg-black20">
+          <li className="h-full p-2 duration-300 transition-all hover:bg-black20" data-tip data-for="aboutTip">
             <a className="cursor-point" href="#about">
               <TextT size={32} color="#fafcfc" weight="thin" />
             </a>
+            <ReactTooltip id="aboutTip" place="bottom" effect="solid">Sobre</ReactTooltip>
           </li>
-          <li className="h-full p-2 duration-300 transition-all hover:bg-black20">
+          <li className="h-full p-2 duration-300 transition-all hover:bg-black20" data-tip data-for="contactTip">
             <a className="cursor-point" href="#contact">
               <ChatCircle size={32} color="#fafcfc" weight="thin" />
             </a>
+            <ReactTooltip id="contactTip" place="bottom" effect="solid">Contato</ReactTooltip>
           </li>
         </ul>
         {/* menu-mobile */}
