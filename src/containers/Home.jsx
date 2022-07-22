@@ -6,7 +6,7 @@ import { InstagramLogo, GithubLogo, LinkedinLogo, CaretDown } from 'phosphor-rea
 
 function Home() {
   return (
-    <div className="container flex h-screen flex-col" id="home">
+    <div className=" asflex h-screen flex-col" id="home">
       <Navbar />
       <div className="flex flex-1 flex-col justify-center">
         <TitleGradient text="Prynss Maia" />
