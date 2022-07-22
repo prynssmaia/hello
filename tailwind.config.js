@@ -7,6 +7,10 @@ module.exports = {
         point: 'url(/public/assets/pointer.svg), pointer'
       },
       colors: {
+        white10: '#FAFCFC',
+        black10: '#2C2C2C',
+        black20: '#111111',
+        blue10: '#469FF4',
         primary: '#350207',
       },
       fontFamily: {
