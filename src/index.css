@@ -4,5 +4,9 @@
 @tailwind utilities;
 
 .container {
-  @apply max-w-[68.75rem] w-[90%] mx-auto
+  @apply max-w-[93.75rem] w-[90%] mx-auto
+}
+
+.container-canva {
+  @apply max-w-[93.75rem] w-[90%] mx-auto my-4
 }

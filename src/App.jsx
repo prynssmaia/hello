@@ -5,9 +5,8 @@ import './index.css';
 
 function App() {
   return (
-    <div className="min-h-screen bg-home cursor-default">
+    <div className="min-h-screen cursor-default">
       <Home />
-      <Projects />
     </div>
   );
 }

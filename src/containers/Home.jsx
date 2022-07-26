@@ -1,72 +1,41 @@
 import React from 'react';
-import TitleGradient from '../components/TitleGradient';
 import Navbar from '../components/Navbar';
-import BodyText from '../components/BodyText';
-import { InstagramLogo, GithubLogo, LinkedinLogo, CaretDown } from 'phosphor-react';
+import TitleGradient from '../components/TitleGradient';
+import ProjectCard from '../components/ProjectCard';
 
 function Home() {
   return (
-    <div className=" asflex h-screen flex-col" id="home">
+    <div className="flex bg-[#202020] h-screen flex-col" id="home">
       <Navbar />
-      <div className="flex flex-1 flex-col justify-center">
-        <TitleGradient text="Prynss Maia" />
-        <BodyText text="Losing myself to design and some web projects while listen to music." />
-        {/* Socials Section */}
-        <ul className="flex w-36 justify-between pt-10 md:w-44 md:pt-14 lg:w-48 lg:pt-20">
-          <li className="flex h-7 w-7 transform items-center justify-center rounded-full transition-all duration-700 hover:scale-105 hover:shadow-pink">
-            <a 
-              className="cursor-point"
-              href="https://www.instagram.com/prynssmaia/"
-              target="_blank"
-            >
-              <InstagramLogo
-                className="lg:h-10 lg:w-10"
-                size={28}
-                color="#350207"
-                weight="thin"
-              />
-            </a>
-          </li>
-          <li className="flex h-7 w-7 transform items-center justify-center rounded-full transition-all duration-700 hover:scale-105 hover:shadow-red">
-            <a
-              className="cursor-point" 
-              href="https://github.com/prynssmaia"
-              target="_blank"
-            >
-              <GithubLogo
-                className="lg:h-10 lg:w-10"
-                size={28}
-                color="#350207"
-                weight="thin"
-              />
-            </a>
-          </li>
-          <li className="flex h-7 w-7 transform items-center justify-center rounded-full transition-all duration-700 hover:scale-105 hover:shadow-blue">
-            <a
-              className="cursor-point"
-              href="https://www.linkedin.com/in/prynss-maia-da-silva-689866241/"
-              target="_blank"
-            >
-              <LinkedinLogo
-                className="lg:h-10 lg:w-10"
-                size={28}
-                color="#350207"
-                weight="thin"
-              />
-            </a>
-          </li>
-        </ul>
-      </div>
-      {/* Arrow Down */}
-      <div className="flex items-center justify-center pb-5 md:pb-10 lg:pb-12">
-        <a href="#projects">
-        <CaretDown
-          className="transform cursor-point transition-all duration-500 hover:scale-105 lg:h-14 lg:w-14"
-          size={48}
-          color="#350207"
-          weight="thin"
-        />
-        </a>
+      <div className="container-canva bg-[#E5E5E5] w-full h-full">
+
+        <div className="grid auto-cols-fr grid-cols-1 grid-rows-1 gap-4 overflow-hidden md:grid-cols-2">
+          <TitleGradient text="Projects" />
+          <div className="grid gap-7 md:col-span-2 md:col-start-2 md:gap-10">
+            {/* <div className=" grid gap-7 md:gap-10"> */}
+            <ProjectCard
+              title="Project Red Umbrella I"
+              description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            />
+            <ProjectCard
+              title="Project Red Umbrella II"
+              description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt sequi laborum veritatis."
+            />
+            <ProjectCard
+              title="Project Red Umbrella III"
+              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, cum exercitationem. Et, suscipit!"
+            />
+            {/* <div className="">
+              <img src="https://images.unsplash.com/photo-1514830902516-48e20ae0ced9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8" />
+            </div>
+            <div className="">
+              <img src="https://images.unsplash.com/photo-1518834984017-faefb4572688?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" />
+            </div>
+            <div className="">
+              <img src="https://images.unsplash.com/photo-1612170482263-b7e393c4e87f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+            </div> */}
+          </div>
+        </div>
       </div>
     </div>
   );
