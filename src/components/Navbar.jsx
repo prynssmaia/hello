@@ -30,6 +30,13 @@ function Navbar() {
             />
           </svg>
         </div>
+        {/* file name */}
+        <div className="hidden font-text md:flex md:justify-center md:items-center">
+          <p className="text-white">
+          <span className="text-[#B6B6B6]">Draft / </span>
+          Personal Portfolio
+          </p>
+        </div>
         {/* menu-desktop */}
         <ul className="hidden h-full md:flex md:justify-center md:items-center">
           <li className="flex items-center h-full p-2 bg-blue10">
