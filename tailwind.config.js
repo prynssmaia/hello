@@ -3,8 +3,8 @@ module.exports = {
   theme: {
     extend: {
       cursor: {
-        default: 'url(/public/assets/navigation.svg), default',
-        point: 'url(/public/assets/pointer.svg), pointer'
+        default: 'url(/assets/navigation.svg), default',
+        point: 'url(/assets/pointer.svg), pointer'
       },
       colors: {
         white10: '#FAFCFC',
