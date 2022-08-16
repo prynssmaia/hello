@@ -8,9 +8,11 @@ function Home() {
   return (
     <div className="flex h-screen flex-col bg-[#202020]" id="home">
       <Navbar />
-      <div className="container-canva h-full w-full bg-[#245633] p-4">
+      <div className="container-canva relative h-full w-full bg-[#245633] p-4">
+        <div className="flex justify-center py-24">
+          <TitleGradient className="" text="Welcome to my portfolio" />
+        </div>
         <div className="grid auto-cols-fr grid-cols-1 grid-rows-1 gap-4 overflow-hidden md:grid-cols-2">
-          <TitleGradient text="Welcome" />
           <div className="grid gap-7 md:col-span-2 md:col-start-2 md:gap-10">
             {/* card hello */}
             <div className="relative h-32 w-80 rounded bg-home">
