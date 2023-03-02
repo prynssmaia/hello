@@ -8,10 +8,16 @@ module.exports = {
       },
       colors: {
         white10: '#FAFCFC',
+        black0: '#444444',
         black10: '#2C2C2C',
-        black20: '#111111',
+        black20: '#202020',
+        black30: '#111111',
         blue10: '#469FF4',
         primary: '#350207',
+        green10: '#ABD1C6',
+        green20: '#004643',
+        green30: '#001E1D',
+        yellow30: '#F9BC60',
       },
       fontFamily: {
         text: ["'Libre Franklin'", 'sans-serif'],
@@ -19,7 +25,6 @@ module.exports = {
       },
       backgroundImage: {
         portait: "url('/assets/bg-hero.png')",
-        home: 'linear-gradient(104.4deg, #FFA28F 23.54%, #FF8870 92.45%)',
         hero: 'linear-gradient(121.36deg, #D7057F 23%, #C8098A 14%, #1442DB 48%)',
         blk: 'linear-gradient(180.01deg, rgba(0, 0, 0, 0) 10.42%, rgba(7, 7, 7, 0.5) 40.63%, #0F0F0F 91.14%)',
       },
@@ -30,6 +35,14 @@ module.exports = {
       },
       dropShadow: {
         white: '-5px 6px 0px #FFFFFF',
+      },
+      screens: {
+        xs: '480px',
+        ss: '620px',
+        sm: '768px',
+        md: '1060px',
+        lg: '1200px',
+        xl: '1700px',
       },
     },
   },

@@ -4,10 +4,42 @@
 @tailwind components;
 @tailwind utilities;
 
-.container {
-  @apply max-w-[93.75rem] w-[90%] mx-auto
+* {
+  scroll-behavior: smooth;
 }
 
 .container-canva {
   @apply max-w-[93.75rem] w-[90%] mx-auto my-4
+}
+
+a {
+  @apply cursor-point
+}
+
+.sidenav-in {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+	        animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+	        animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(480px);
+            transform: translateX(480px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(480px);
+            transform: translateX(480px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }

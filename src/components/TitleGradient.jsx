@@ -2,7 +2,7 @@ import React from 'react';
 
 function TitleGradient({ text }) {
   return (
-    <h1 class="bg-hero bg-clip-text pb-5 font-text text-5xl font-bold text-transparent underline hover:decoration-blue10 hover:decoration-2 hover:underline-offset-1 md:text-6xl lg:pb-8 lg:text-7xl">
+    <h1 class="xl:text8xl bg-hero bg-clip-text font-text text-7xl font-bold text-transparent underline hover:decoration-blue10 hover:decoration-2 hover:underline-offset-1 md:text-6xl">
       {text}
     </h1>
   );
