@@ -77,25 +77,25 @@ function Navbar() {
             !toggleMenu ? 'hidden' : 'flex'
           } sidenav fixed right-0 top-0 h-screen w-screen flex-col justify-start bg-black10 text-white10`}
         >
-          <div className="container-canva">
+          <div className="container-canva overflow-y-auto">
             <Profile />
             <Divider />
-            {navLinks.map((nav, index) => (
-              <ul className="">
-                <li className="duration-600 cursor-point py-4 text-2xl font-semibold transition-all hover:bg-blue10 hover:text-white">
+            <ul>
+              {navLinks.map((nav, index) => (
+                <li className="cursor-point  py-4 text-xl font-semibold hover:bg-blue10 hover:text-white">
                   <a
-                    className="flex"
+                    className="flex content-center items-center"
                     onClick={() => setToggleMenu(false)}
                     href={`#${nav.id}`}
                   >
-                    <nav.icon className="mr-6" size={32} color="#fafcfc" weight="thin" />
+                    <nav.icon className="mr-6" size={24} color="#fafcfc" weight="thin" />
                     {nav.title}
                   </a>
                 </li>
-              </ul>
-            ))}
+              ))}
+            </ul>
             <Divider />
-            <div className="flex h-4/5 flex-1 items-center justify-center text-sm">
+            <div className="flex items-center justify-center text-xs opacity-60">
               <p className="mr-2">Designed & Developed by</p>
               <svg
                 className="lg:h-11 lg:w-14"
