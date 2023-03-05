@@ -1,11 +1,18 @@
 import React from 'react';
 
-function Card({ grid, children, bgColor, width, height }) {
+function Card({ children, width, height }) {
   return (
-    <div
-      className={`${grid} ${bgColor} ${width} ${height} flex items-center justify-center rounded`}
-    >
-      {children}
+    // <div className= card z-50 text-white`}>
+    //   <div className="card-content flex-center">{(children, text)}</div>
+    // </div>
+    <div className="z-50 mb-6">
+      <div
+        className={`${width} ${height} border-radius h-full w-full bg-gradient-to-br from-black0 p-[1px]`}
+      >
+        <div className="flex-center border-radius h-full w-full bg-[#191919]">
+          {children}
+        </div>
+      </div>
     </div>
   );
 }

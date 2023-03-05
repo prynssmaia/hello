@@ -5,6 +5,7 @@ import {
   BackgroundVideo,
   Navbar,
   Card,
+  FrameBackground,
   Title,
   TitleGradient,
   LuckyNumber,
@@ -16,20 +17,17 @@ function Home() {
   return (
     <div className="flex h-screen flex-col bg-black20" id="home">
       <Navbar />
-      <div
-        className={`container-canva flex h-screen flex-col justify-between bg-green20 ${styles.padding}`}
-      >
-        <Card height="h-1/4">
-          <BackgroundVideo className="my-4" />
+      <FrameBackground>
+        <Card height="h-36">
+          <Title text="Welcome to my Figma file" color="text-white"></Title>
         </Card>
-        <Card height="h-1/4">
-          <Title text="Prynss" color="bg-yellow30" className="my-4" />
+        <Card height="">
+          <ProjectCard
+            title="Lorem Ipsum"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, illum!"
+          />
         </Card>
-        <ProjectCard
-          title="Lorem Ipsum"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, illum!"
-        />
-      </div>
+      </FrameBackground>
     </div>
   );
 }

@@ -2,6 +2,7 @@ import BackgroundVideo from './BackgroundVideo';
 import BodyText from './BodyText';
 import Card from './Card';
 import Divider from './Divider';
+import FrameBackground from './FrameBackground';
 import LuckyNumber from './LuckyNumber';
 import Navbar from './Navbar';
 import Profile from './Profile';
@@ -15,6 +16,7 @@ export {
   BodyText,
   Card,
   Divider,
+  FrameBackground,
   Navbar,
   LuckyNumber,
   Profile,
