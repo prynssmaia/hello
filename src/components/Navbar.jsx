@@ -77,7 +77,7 @@ function Navbar() {
             !toggleMenu ? 'hidden' : 'flex'
           } sidenav fixed right-0 top-0 h-screen w-screen flex-col justify-start bg-black10 text-white10`}
         >
-          <div className="container-canva overflow-y-auto">
+          <div className="container-canva z-50 overflow-y-auto">
             <Profile />
             <Divider />
             <ul>

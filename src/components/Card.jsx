@@ -5,7 +5,7 @@ function Card({ children, width, height }) {
     // <div className= card z-50 text-white`}>
     //   <div className="card-content flex-center">{(children, text)}</div>
     // </div>
-    <div className="z-50 mb-6">
+    <div className="z-10 mb-6">
       <div
         className={`${width} ${height} border-radius h-full w-full bg-gradient-to-br from-black0 p-[1px]`}
       >
