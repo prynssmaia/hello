@@ -39,21 +39,31 @@ a {
 }
 /* Text Base Styles */
 .heading1 {
-  @apply font-bold sm:text-5xl md:text-6xl lg:text-7xl
+  @apply font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl
 }
 
 /* Display Flex Basics Styles */
 .flex-center {
-  @apply flex justify-center items-center
+  @apply flex flex-col justify-center items-center
 }
 
 .flex-start { 
-  @apply flex justify-center items-start
+  @apply flex flex-col justify-end items-start
 }
 
 /* Border Radius  */
 .border-radius {
- @apply xs:rounded-md md:rounded-lg lg:rounded-[10px]
+  @apply rounded-md md:rounded-lg xl:rounded-[10px]
+}
+
+/* Padding X Tag */
+.padding-tag {
+  @apply px-2 py-1 md:py-[6px] md:px-4 xl:px-5 xl:py-[4px]
+}
+
+/* Padding */
+.padding {
+  @apply p-4 md:p-6 xl:p-8
 }
 
 .bg-grid-pattern {

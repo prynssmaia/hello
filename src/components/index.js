@@ -8,6 +8,7 @@ import Navbar from './Navbar';
 import Profile from './Profile';
 import ProjectCard from './ProjectCard';
 import SocialLinks from './SocialLinks';
+import Tag from './Tag';
 import Title from './Title';
 import TitleGradient from './TitleGradient';
 
@@ -22,6 +23,7 @@ export {
   Profile,
   ProjectCard,
   SocialLinks,
+  Tag,
   Title,
   TitleGradient,
 };

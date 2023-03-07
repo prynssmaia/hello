@@ -6,6 +6,7 @@ import {
   Navbar,
   Card,
   FrameBackground,
+  Tag,
   Title,
   TitleGradient,
   LuckyNumber,
@@ -18,15 +19,23 @@ function Home() {
     <div className="flex h-screen flex-col bg-black20" id="home">
       <Navbar />
       <FrameBackground>
-        <Card height="h-36">
-          <Title text="Welcome to my Figma file" color="text-white"></Title>
+        <Card className="" height="h-80">
+          <div className="flex flex-row items-center justify-center space-x-2">
+            <div className="h-[6px] w-[6px] animate-pulse rounded-full bg-primary opacity-80"></div>
+            <p className="text-black0">Welcome to my Figma file</p>
+          </div>
+          <Title text="Prynss Maia" color="text-white"></Title>
+          <div className="flex space-x-4">
+            <Tag textColor="text-white10" bgColor="bg-primary" text="UI Designer"></Tag>
+            <Tag textColor="text-white10" bgColor="bg-primary" text="Lorem Ipsum"></Tag>
+          </div>
         </Card>
-        <Card height="">
+        {/* <Card height="">
           <ProjectCard
             title="Lorem Ipsum"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, illum!"
           />
-        </Card>
+        </Card> */}
       </FrameBackground>
     </div>
   );
