@@ -13,7 +13,7 @@ module.exports = {
         black10: '#2C2C2C',
         black19: '#191919',
         black20: '#202020',
-        black30: '#111111',
+        black11: '#111111',
         blue10: '#469FF4',
         green10: '#ABD1C6',
         green20: '#004643',
