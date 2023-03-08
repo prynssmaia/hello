@@ -39,7 +39,7 @@ a {
 }
 /* Text Base Styles */
 .heading1 {
-  @apply font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl
+  @apply font-bold text-4xl sm:text-6xl md:text-7xl lg:text-8xl
 }
 
 /* Display Flex Basics Styles */
