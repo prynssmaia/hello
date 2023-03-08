@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from '../style';
 import { navIcons, navLinks } from '../constants';
-import { List, X } from 'phosphor-react';
+import { List, UserCircle, X } from 'phosphor-react';
 import { Profile, Divider } from '../components';
 
 function Navbar() {
@@ -33,7 +33,8 @@ function Navbar() {
           </svg>
         </div>
         {/* file name */}
-        <div className="hidden font-text md:flex md:items-center md:justify-center">
+        <div className="hidden space-x-1 font-text md:flex md:items-center md:justify-center">
+          <UserCircle size={32} color="#B6B6B6" weight="thin" />
           <p className="text-white">
             <span className="text-[#B6B6B6]">Draft / </span>
             Personal Portfolio
@@ -45,7 +46,7 @@ function Navbar() {
             <li
               key={ico.ref}
               className={`flex h-full cursor-point items-center p-2 ${
-                active === ico.ref ? 'bg-blue10' : 'bg-black10'
+                active === ico.ref ? 'bg-primary' : 'bg-black10'
               }`}
               onClick={() => setActive(ico.ref)}
             >
@@ -82,7 +83,7 @@ function Navbar() {
             <Divider />
             <ul>
               {navLinks.map((nav, index) => (
-                <li className="cursor-point  py-4 text-xl font-semibold hover:bg-blue10 hover:text-white">
+                <li className="cursor-point  py-4 text-xl font-semibold hover:bg-primary hover:text-white">
                   <a
                     className="flex content-center items-center"
                     onClick={() => setToggleMenu(false)}
