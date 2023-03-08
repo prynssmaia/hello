@@ -42,6 +42,10 @@ a {
   @apply font-bold text-4xl sm:text-6xl md:text-7xl lg:text-8xl
 }
 
+.paragraph {
+  @apply text-xs md:text-sm
+}
+
 /* Display Flex Basics Styles */
 .flex-center {
   @apply flex flex-col justify-center items-center

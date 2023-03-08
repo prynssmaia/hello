@@ -9,7 +9,7 @@ function Card({ children, width, height }) {
       <div
         className={`${width} ${height} flex-start border-radius w-full bg-gradient-to-br from-black0 p-[1px]`}
       >
-        <div className="flex-start border-radius padding h-full w-full space-y-4 bg-black19">
+        <div className="flex-start border-radius padding h-full w-full space-y-2 bg-black19 md:space-y-4">
           {children}
         </div>
       </div>
