@@ -26,7 +26,7 @@ function Home() {
           </div>
           <div className="flex flex-row items-center space-x-2 md:space-x-4 lg:space-x-6">
             <Title text="Prynss Maia" color="text-white"></Title>
-            <div className="h-1 w-10 rounded-[1px] bg-white md:h-[6px] md:w-28 md:rounded-sm lg:h-2.5 lg:w-48 xl:h-3 xl:w-52 xl:rounded-sm"></div>
+            <div className="h-1 w-10 rounded-[1px] bg-white md:h-[6px] md:w-28 md:rounded-sm lg:h-2.5 lg:w-48 xl:h-3 xl:w-52 xl:rounded-sm xs:hidden ss:flex"></div>
           </div>
           <div className="flex items-center space-x-2 md:space-x-4">
             <Tag textColor="text-white10" bgColor="bg-primary" text="UI Designer"></Tag>
