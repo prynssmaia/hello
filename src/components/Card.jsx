@@ -1,15 +1,17 @@
 import React from 'react';
 
-function Card({ children, width, height }) {
+function Card({ children, width, height, flex, bgColor, cursor }) {
   return (
     // <div className= card z-50 text-white`}>
     //   <div className="card-content flex-center">{(children, text)}</div>
     // </div>
     <div className="z-10 mb-6">
       <div
-        className={`${width} ${height} flex-start border-radius w-full bg-gradient-to-br from-black0 p-[1px]`}
+        className={`${width} ${height} ${flex} ${cursor} border-radius bg-gradient-to-br from-black0 p-[1px]`}
       >
-        <div className="flex-start border-radius padding h-full w-full space-y-2 bg-black19 md:space-y-4">
+        <div
+          className={`${flex} border-radius padding h-full w-full space-y-2 ${bgColor} md:space-y-4`}
+        >
           {children}
         </div>
       </div>

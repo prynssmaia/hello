@@ -1,5 +1,6 @@
 import React from 'react';
-import styles from '../style';
+import { socialMedia } from '../constants';
+import image from '../../public/assets/selection-area.svg';
 
 import {
   BackgroundVideo,
@@ -19,7 +20,11 @@ function Home() {
     <div className="flex h-screen flex-col bg-black20" id="home">
       <Navbar />
       <FrameBackground>
-        <Card className="" height="h-48 md:h-56 lg:h-64 xl:h-80">
+        <Card
+          flex="flex-start"
+          bgColor="bg-black19"
+          height="h-48 md:h-56 lg:h-64 xl:h-80"
+        >
           <div className="flex flex-row items-center justify-center space-x-2">
             <div className="h-[6px] w-[6px] animate-pulse rounded-full bg-primary opacity-80"></div>
             <p className="paragraph text-black0">Welcome to my Figma file</p>
@@ -38,12 +43,36 @@ function Home() {
             <p className="paragraph text-white">@FLN</p>
           </div>
         </Card>
-        {/* <Card height="">
-          <ProjectCard
-            title="Lorem Ipsum"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, illum!"
-          />
-        </Card> */}
+
+        {/* Coluna 1*/}
+        <div className="z-10">
+          {/* <Card flex="flex-center" bgColor="bg-black19" height="h-[504px]">
+            <p className="heading4 text-white">Sobre</p>
+          </Card> */}
+          <div className="flex items-center space-x-6">
+            {/* <Card
+              flex="flex-center"
+              bgColor="bg-black19"
+              height="h-16"
+              width="flex-1"
+            >
+              <p className="heading4 text-white">hi</p>
+            </Card> */}
+            {socialMedia.map((icons, index) => (
+              <Card
+                flex="flex-center"
+                bgColor="bg-black19 hover:bg-primary transition delay-150 duration-400 ease"
+                height="h-20"
+                width="w-20"
+                cursor="cursor-point"
+              >
+                <a href={`${icons.link}`} target="_blank">
+                  <icons.icon size={32} color="#fafcfc" />
+                </a>
+              </Card>
+            ))}
+          </div>
+        </div>
       </FrameBackground>
     </div>
   );
