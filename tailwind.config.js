@@ -19,6 +19,7 @@ module.exports = {
         green20: '#004643',
         green30: '#001E1D',
         yellow30: '#F9BC60',
+        twitter: '#1DA1F2',
       },
       fontFamily: {
         text: ["'Libre Franklin'", 'sans-serif'],

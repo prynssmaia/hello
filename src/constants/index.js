@@ -3,7 +3,7 @@ import {
   Layout,
   TextT,
   ChatCircle,
-  BehanceLogo,
+  TwitterLogo,
   InstagramLogo,
   LinkedinLogo,
   GithubLogo,
@@ -78,23 +78,23 @@ export const projects = [
 
 export const socialMedia = [
   {
-    id: 'behance-logo',
-    icon: BehanceLogo,
-    link: 'https://www.instagram.com/',
+    id: 'twitter',
+    icon: TwitterLogo,
+    link: 'https://www.twitter.com/prynss_ms/',
   },
   {
-    id: 'instagram-logo',
+    id: 'instagram',
     icon: InstagramLogo,
     link: 'https://www.instagram.com/prynssmaia/',
   },
   {
-    id: 'linkedin-logo',
+    id: 'linkedin',
     icon: LinkedinLogo,
-    link: 'https://www.twitter.com/',
+    link: 'https://www.linkedin.com/',
   },
   {
-    id: 'github-logo',
+    id: 'github',
     icon: GithubLogo,
-    link: 'https://www.linkedin.com/',
+    link: '#',
   },
 ];
