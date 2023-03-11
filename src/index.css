@@ -55,8 +55,20 @@ a {
   @apply flex flex-col items-center justify-center
 }
 
+.flex-center-x {
+  @apply flex flex-row items-center justify-center
+}
+
 .flex-start { 
   @apply flex flex-col justify-end items-start
+}
+
+.flex-grow-y {
+  @apply flex grow flex-col
+}
+
+.flex-grow-x {
+  @apply flex grow flex-row
 }
 
 /* Border Radius  */
