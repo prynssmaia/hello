@@ -25,9 +25,10 @@ function Home() {
       <FrameBackground>
         <div className="z-10 flex h-full flex-col space-y-6">
           <Card
-            flex="flex-start"
+            flex="flex-start md:space-y-4 space-y-2"
             bgColor="bg-black19"
             height="h-48 md:h-56 lg:h-64 xl:h-80"
+            padding="padding"
           >
             <div className="flex flex-row items-center justify-center space-x-2">
               <div className="h-[6px] w-[6px] animate-pulse rounded-full bg-primary opacity-80"></div>

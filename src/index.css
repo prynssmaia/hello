@@ -33,10 +33,6 @@ a {
   }
 }
 
-/* Spacing Base Styles */
-.padding {
-  @apply p-4
-}
 /* Text Base Styles */
 .heading1 {
   @apply font-bold text-4xl sm:text-6xl md:text-7xl lg:text-8xl
