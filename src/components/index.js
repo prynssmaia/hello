@@ -11,11 +11,17 @@ import SocialLinks from './SocialLinks';
 import Tag from './Tag';
 import Title from './Title';
 import TitleGradient from './TitleGradient';
+import CardAbout from './Cards/CardAbout';
+import CardContact from './Cards/CardContact';
+import CardProjects from './Cards/CardProjects';
 
 export {
   BackgroundVideo,
   BodyText,
   Card,
+  CardAbout,
+  CardContact,
+  CardProjects,
   Divider,
   FrameBackground,
   Navbar,
