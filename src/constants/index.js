@@ -60,13 +60,13 @@ export const projects = [
     id: 'project-1',
     image: 'https://source.unsplash.com/random/?red-aesthetic&1',
     title: 'Project 1',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Lorem ipsum dolor',
   },
   {
     id: 'project-2',
     image: 'https://source.unsplash.com/random/?red-aesthetic&2',
     title: 'Project 2',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Lorem ipsum dolor',
   },
 ];
 
