@@ -58,20 +58,14 @@ export const navLinks = [
 export const projects = [
   {
     id: 'project-1',
-    image: 'https://unsplash.com/pt-br/fotografias/dJpupM4LiS4',
+    image: 'https://source.unsplash.com/random/?red-aesthetic&1',
     title: 'Project 1',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
   {
     id: 'project-2',
-    image: 'https://unsplash.com/pt-br/fotografias/mcSDtbWXUZU',
+    image: 'https://source.unsplash.com/random/?red-aesthetic&2',
     title: 'Project 2',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    id: 'project-3',
-    image: 'https://unsplash.com/pt-br/fotografias/4UGmm3WRUoQ',
-    title: 'Project 3',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
 ];

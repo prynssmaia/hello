@@ -82,6 +82,11 @@ a {
   @apply p-4 md:p-6 xl:p-8
 }
 
+/* Basic transition */
+.transition-basic { 
+  @apply transition delay-100 duration-500 ease-in-out 
+}
+
 .bg-grid-pattern {
   background-color: #202020;
   /* background: radial-gradient(at left top, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0)); */
