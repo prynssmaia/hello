@@ -53,7 +53,7 @@ function Home() {
               <p className="paragraph text-white">@FLN</p>
             </div>
           </Card>
-          <div className="flex h-full space-x-6">
+          <div className="flex h-full flex-col space-y-6 sm:space-y-0 sm:space-x-6 sm:flex sm:flex-row">
             {/* Section 1 */}
             <div className="flex w-full flex-col space-y-6">
               <CardAbout></CardAbout>
