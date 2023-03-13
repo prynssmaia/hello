@@ -6,7 +6,7 @@ function Card({ children, width, height, padding, flex, bgColor, cursor }) {
     //   <div className="card-content flex-center">{(children, text)}</div>
     // </div>
     <div
-      className={`${width} ${height} ${flex} ${cursor} border-radius z-10 bg-gradient-to-br from-black0 p-[1px]`}
+      className={`${width} ${height} ${flex} ${cursor} border-radius bg-gradient-to-br from-black0 p-[1px]`}
     >
       <div className={`${flex} border-radius ${padding} h-full w-full ${bgColor}`}>
         {children}
