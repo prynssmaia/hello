@@ -7,6 +7,7 @@ import LuckyNumber from './LuckyNumber';
 import Navbar from './Navbar';
 import Profile from './Profile';
 import ProjectCard from './ProjectCard';
+import ProjectModal from './ProjectModal';
 import SocialLinks from './SocialLinks';
 import Tag from './Tag';
 import Title from './Title';
@@ -28,6 +29,7 @@ export {
   LuckyNumber,
   Profile,
   ProjectCard,
+  ProjectModal,
   SocialLinks,
   Tag,
   Title,
