@@ -23,8 +23,8 @@ function Home() {
   return (
     <div className="flex h-screen flex-col bg-black20" id="home">
       <Navbar />
+      {/* <ProjectModal /> */}
       <FrameBackground>
-      <ProjectModal />
         <div className="z-10 flex h-full flex-col space-y-6">
           <Card
             flex="flex-start md:space-y-4 space-y-2"
