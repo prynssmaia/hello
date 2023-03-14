@@ -1,7 +1,6 @@
 import React from 'react';
 import Card from '../Card';
 import { projects } from '../../constants';
-import Tag from '../Tag';
 
 function CardProjects() {
   return (
@@ -18,9 +17,12 @@ function CardProjects() {
           <div className="border-radius flex-center transition-basic absolute space-y-2 bg-black19 py-4 text-white opacity-0  group-hover:opacity-100 lg:w-[228px] xl:w-[274px]">
             <div className="heading4">{`${proj.title}`}</div>
             <div className="paragraph">{`${proj.description}`}</div>
-            <Tag textColor="text-white10" bgColor="bg-primary">
+            <button
+              textColor="text-white10"
+              className="bg-primary"
+            >
               Conheça o projeto
-            </Tag>
+            </button>
           </div>
         </Card>
       ))}
