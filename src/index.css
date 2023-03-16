@@ -77,6 +77,11 @@ a, button {
   @apply px-2 py-1 md:py-[6px] md:px-4 xl:px-5 xl:py-[4px]
 }
 
+/* Padding X Button */
+.padding-button {
+  @apply px-2 py-1 md:py-[6px] md:px-4 xl:px-5 xl:py-[4px]
+}
+
 /* Padding */
 .padding {
   @apply p-4 md:p-6 xl:p-8

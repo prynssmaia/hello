@@ -1,5 +1,6 @@
 import BackgroundVideo from './BackgroundVideo';
 import BodyText from './BodyText';
+import Button from './Button';
 import Card from './Card';
 import Divider from './Divider';
 import FrameBackground from './FrameBackground';
@@ -19,6 +20,7 @@ import CardProjects from './Cards/CardProjects';
 export {
   BackgroundVideo,
   BodyText,
+  Button,
   Card,
   CardAbout,
   CardContact,
