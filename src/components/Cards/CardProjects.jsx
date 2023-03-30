@@ -3,12 +3,18 @@ import Card from '../Card';
 import { projects } from '../../constants';
 import { Button } from '../../components';
 
-function CardProjects() {
+function CardProjects({ onClick }) {
   return (
     <a className="group flex h-full w-full space-x-6">
       {projects.map((proj) => (
-        <Card flex="flex-center" bgColor="bg-black19" height="h-full" width="w-full">
-          <div class="padding border-radius relative h-full w-full overflow-hidden">
+        <Card
+          onClick={() => onClick(proj)}
+          flex="flex-center"
+          bgColor="bg-black19"
+          height="h-full"
+          width="w-full"
+        >
+          <div className="padding border-radius relative h-full w-full overflow-hidden">
             <img
               className="transition-basic absolute inset-0 h-full w-full transform object-cover group-hover:scale-125 group-hover:opacity-50"
               src={`${proj.image}`}

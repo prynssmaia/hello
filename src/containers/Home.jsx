@@ -2,6 +2,7 @@ import React from 'react';
 import { socialMedia } from '../constants';
 import image from '../../public/assets/selection-area.svg';
 import { useState } from 'react';
+import { projects } from '../constants'
 
 import {
   BackgroundVideo,
@@ -22,6 +23,8 @@ import {
 
 function Home() {
   const [modalOpen, setModalOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState();
+  
 
   function handleOpenModal() {
     setModalOpen(true);
@@ -34,7 +37,7 @@ function Home() {
     <div className="flex h-screen flex-col bg-black20" id="home">
       <Navbar />
 
-      <ProjectModal isOpen={modalOpen} onClose={handleCloseModal}>
+      <ProjectModal selectedProject={selectedProject} isOpen={modalOpen} onClose={handleCloseModal}>
         <p>Conteúdo da modal aqui</p>
       </ProjectModal>
       <FrameBackground>
@@ -73,8 +76,13 @@ function Home() {
               <CardContact></CardContact>
             </div>
             {/* Section 2 */}
-            <div className="h-full w-full text-white" onClick={handleOpenModal}>
-              <CardProjects></CardProjects>
+            <div className="h-full w-full text-white">
+              <CardProjects onClick={(proj) => {
+                  console.log(proj)
+                  setSelectedProject(proj)
+                  handleOpenModal()
+                }} 
+              />
             </div>
           </div>
         </div>

@@ -2,8 +2,8 @@ import React from 'react';
 
 const Divider = () => {
   return (
-    <div class="relative flex py-6">
-      <div class="flex-grow border-t border-black0"></div>
+    <div className="relative flex py-6">
+      <div className="flex-grow border-t border-black0"></div>
     </div>
   );
 };

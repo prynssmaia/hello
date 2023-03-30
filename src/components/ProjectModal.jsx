@@ -1,8 +1,7 @@
 import React from 'react';
 import { X } from 'phosphor-react';
-import { projects } from '../constants';
 
-function ProjectModal({ isOpen, onClose, children }) {
+function ProjectModal({ selectedProject, isOpen, onClose, children }) {
   return (
     <div className={`${!isOpen ? 'hidden' : 'flex'}`}>
       <div
@@ -23,13 +22,12 @@ function ProjectModal({ isOpen, onClose, children }) {
             </button>
             <img
               className="absolute inset-0 h-full w-full object-cover"
-              src="https://source.unsplash.com/random/?red-aesthetic&1"
+              src={selectedProject?.image}
             />
           </div>
           <div className="padding  text-white">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
-              recusandae?
+              {selectedProject?.description}
             </p>
           </div>
         </div>
