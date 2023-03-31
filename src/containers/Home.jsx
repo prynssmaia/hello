@@ -1,25 +1,13 @@
 import React from 'react';
-import { socialMedia } from '../constants';
-import image from '../../public/assets/selection-area.svg';
 import { useState } from 'react';
-import { projects } from '../constants';
-
+import FrameBackground from '../containers/FrameBackground';
 import {
-  BackgroundVideo,
   Navbar,
-  Card,
   CardAbout,
   CardContact,
   CardPresentation,
   CardProjects,
-  FrameBackground,
-  Tag,
-  Title,
-  TitleGradient,
-  LuckyNumber,
-  ProjectCard,
   ProjectModal,
-  SocialLinks,
 } from '../components';
 
 function Home() {

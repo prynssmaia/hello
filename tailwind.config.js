@@ -14,26 +14,13 @@ module.exports = {
         black19: '#191919',
         black20: '#202020',
         black11: '#111111',
-        blue10: '#469FF4',
-        green10: '#ABD1C6',
-        green20: '#004643',
-        green30: '#001E1D',
-        yellow30: '#F9BC60',
-        twitter: '#1DA1F2',
       },
       fontFamily: {
         text: ["'Libre Franklin'", 'sans-serif'],
         number: ['Stalinist One', 'sans-serif'],
       },
       backgroundImage: {
-        portait: "url('/assets/bg-hero.png')",
-        hero: 'linear-gradient(121.36deg, #D7057F 23%, #C8098A 14%, #1442DB 48%)',
         blk: 'linear-gradient(180.01deg, rgba(0, 0, 0, 0) 10.42%, rgba(7, 7, 7, 0.5) 40.63%, #0F0F0F 91.14%)',
-      },
-      boxShadow: {
-        pink: '0px 0px 32px #D7057F85',
-        red: '0px 0px 32px #BE09C880',
-        blue: '0px 0px 24px #1442DB70',
       },
       dropShadow: {
         white: '-5px 6px 0px #FFFFFF',
