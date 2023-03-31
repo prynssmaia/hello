@@ -9,7 +9,7 @@ function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <header className="sticky top-0 z-20 border-b border-black0 bg-black10">
+    <header className="group sticky top-0 z-20 border-b border-black0 bg-black10">
       <nav className={`${styles.containerHeader}`}>
         {/* logo */}
         <div className="z-40">
@@ -34,9 +34,14 @@ function Navbar() {
         </div>
         {/* file name */}
         <div className="hidden space-x-1 font-text md:flex md:items-center md:justify-center">
-          <UserCircle size={32} color="#B6B6B6" weight="thin" />
-          <p className="text-white">
-            <span className="text-[#B6B6B6]">Draft / </span>
+          <UserCircle
+            className="transition-basic h-7 w-7 text-[#B6B6B6] group-hover:text-white"
+            weight="light"
+          />
+          <p className="text-white md:mt-[2px]">
+            <span className="transition-basic text-[#B6B6B6] group-hover:text-white">
+              313 /{' '}
+            </span>
             Personal Portfolio
           </p>
         </div>
@@ -51,7 +56,7 @@ function Navbar() {
               onClick={() => setActive(ico.ref)}
             >
               <a href={`#${ico.ref}`}>
-                <ico.icon size={32} color="#fafcfc" weight="thin" />
+                <ico.icon size={32} color="#fafcfc" weight="light" />
               </a>
             </li>
           ))}
