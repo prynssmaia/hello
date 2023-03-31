@@ -15,6 +15,7 @@ import Title from './Title';
 import TitleGradient from './TitleGradient';
 import CardAbout from './Cards/CardAbout';
 import CardContact from './Cards/CardContact';
+import CardPresentation from './Cards/CardPresentation';
 import CardProjects from './Cards/CardProjects';
 
 export {
@@ -24,6 +25,7 @@ export {
   Card,
   CardAbout,
   CardContact,
+  CardPresentation,
   CardProjects,
   Divider,
   FrameBackground,
