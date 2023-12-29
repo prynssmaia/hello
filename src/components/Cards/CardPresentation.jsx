@@ -18,15 +18,8 @@ function CardPresentation() {
         <div className="h-1 w-10 rounded-[1px] bg-white md:h-[6px] md:w-28 md:rounded-sm lg:h-2.5 lg:w-48 xl:h-3 xl:w-52 xl:rounded-sm xs:hidden ss:flex"></div>
       </div>
       <div className="flex items-center space-x-2 md:space-x-4">
-        <Tag textColor="text-white10" bgColor="bg-primary">
-          UI Designer
-        </Tag>
-        <Tag
-          textColor="text-primary"
-          border="border-primary border-solid border-[1px] xl:border-2"
-        >
-          313 Project
-        </Tag>
+        <Tag>UI Designer</Tag>
+        <Tag>313 Project</Tag>
         <p className="paragraph text-white">@FLN</p>
       </div>
     </Card>
