@@ -7,6 +7,19 @@ module.exports = {
         point: 'url(/assets/pointer.svg), pointer',
       },
       colors: {
+        'abso': {
+          50: "#FFF0F1",
+          100: "#FFE1E3",
+          200: "#FFC8CF",
+          300: "#FF9CA7",
+          400: "#FF6479",
+          500: "#FF2E4F",
+          600: "#F30B39",
+          700: "#E10234",
+          800: "#AC0530",
+          900: "#930830",
+          950: "#530014"
+        }
         primary: '#E10234',
         white10: '#FAFCFC',
         black0: '#444444',
