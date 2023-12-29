@@ -51,7 +51,7 @@ function Navbar() {
             <li
               key={ico.ref}
               className={`flex h-full cursor-point items-center p-2 transition delay-150 duration-200 ease-in-out hover:bg-black11 ${
-                active === ico.ref ? 'bg-abso-700 hover:bg-abso-600' : 'bg-black10'
+                active === ico.ref ? 'bg-abso-700 hover:bg-abso-500' : 'bg-black10'
               }`}
               onClick={() => setActive(ico.ref)}
             >
