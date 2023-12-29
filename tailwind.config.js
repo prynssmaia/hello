@@ -19,8 +19,7 @@ module.exports = {
           800: "#AC0530",
           900: "#930830",
           950: "#530014"
-        }
-        primary: '#E10234',
+        },
         white10: '#FAFCFC',
         black0: '#444444',
         black10: '#2C2C2C',
