@@ -43,7 +43,7 @@ a, button {
 }
 
 .paragraph {
-  @apply text-xs md:text-sm
+  @apply font-normal text-xs md:text-sm
 }
 
 /* Display Flex Basics Styles */
