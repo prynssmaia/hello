@@ -16,7 +16,7 @@ function CardContact() {
         >
           <p className="heading4 hidden text-white md:flex">Say hello.</p>
           <div className="flex-center group-hover:animate-wave">
-            <HandWaving className="h-4 w-4 text-white group-hover:text-primary sm:h-6 sm:w-6 lg:h-6 lg:w-6 xl:h-8 xl:w-8" />
+            <HandWaving className="h-4 w-4 text-white group-hover:text-abso-700 sm:h-6 sm:w-6 lg:h-6 lg:w-6 xl:h-8 xl:w-8" />
           </div>
         </Card>
         <div className="flex items-center space-x-6">
@@ -24,7 +24,7 @@ function CardContact() {
             <a href={`${icons.link}`} target="_blank">
               <Card
                 flex="flex-center"
-                bgColor="bg-black19 hover:bg-primary transition delay-150 duration-400 ease"
+                bgColor="bg-black19 hover:bg-abso-700 transition delay-150 duration-400 ease"
                 height="h-8 sm:h-12 lg:h-12 xl:h-14"
                 width="w-8 sm:w-12 lg:w-12 xl:w-14"
                 cursor="cursor-point"

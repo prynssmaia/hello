@@ -51,7 +51,7 @@ function Navbar() {
             <li
               key={ico.ref}
               className={`flex h-full cursor-point items-center p-2 transition delay-150 duration-200 ease-in-out hover:bg-black11 ${
-                active === ico.ref ? 'bg-primary hover:bg-[#D90232]' : 'bg-black10'
+                active === ico.ref ? 'bg-abso-700 hover:bg-abso-600' : 'bg-black10'
               }`}
               onClick={() => setActive(ico.ref)}
             >
@@ -88,7 +88,7 @@ function Navbar() {
             <Divider />
             <ul>
               {navLinks.map((nav, index) => (
-                <li className="cursor-point py-4 text-xl font-semibold transition delay-150 duration-300 ease-in-out hover:bg-primary hover:text-white">
+                <li className="cursor-point py-4 text-xl font-semibold transition delay-150 duration-300 ease-in-out hover:bg-abso-700 hover:text-white">
                   <a
                     className="flex content-center items-center"
                     onClick={() => setToggleMenu(false)}

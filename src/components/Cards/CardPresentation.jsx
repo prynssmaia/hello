@@ -10,7 +10,7 @@ function CardPresentation() {
       padding="padding"
     >
       <div className="flex flex-row items-center justify-center space-x-2">
-        <div className="h-[6px] w-[6px] animate-pulse rounded-full bg-primary opacity-80"></div>
+        <div className="h-[6px] w-[6px] animate-pulse rounded-full bg-abso-700 opacity-80"></div>
         <p className="paragraph text-black0">Welcome to my Figma file</p>
       </div>
       <div className="flex flex-row items-center space-x-2 md:space-x-4 lg:space-x-6">
